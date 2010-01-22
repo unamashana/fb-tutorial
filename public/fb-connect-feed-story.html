@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.or
+g/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/200
+8/fbml">
+  <head>
+    <title>Facebook Connect Tutorial @ ACM's Compute 2010 </title>
+    <script src="/javascripts/prototype.js" type="text/javascript"></script>
+    <script src="http://static.ak.connect.facebook.com/js/api_lib/v0.4/FeatureLoader.js.php" type="text/javascript"></script>
+  </head>
+
+<body>
+  <h1> Compute 2K10/Facebook Connect </h1>
+
+  <p>Compute 2010, the annual conference of ACM Bangalore Chapter, will be held on 22nd and 23rd Jan, 2010. This will be the third in the series of Compute, the flagship conference of ACM Bangalore Chapter. It is now widely recognized that applied research has a key role to play in computer science is moving beyond the academia into the business domain, more specifically with practitioner perspective of technology absorption, and innovation. The aim of this conference is to bring together researchers, practitioners, technology market movers, and thought leaders, with a view to advance the state of the art, and the state of the practice in applied research, which is a catalyst in leveraging of Computer Science by IT companies . In context of today's proliferation and diversification of information sources, information formats, information access media, we decided to concentrate the conference to discuss diverse contemporary research and practitioner perspectives covering this theme of contemporary information management. Alongside Compute 2010, ACM India Council is hosting the ACM India Launch event. Details here. Detailed Program of Compute 2010 here  </p>
+
+  <h2> Comments </h2>
+
+  <div id="last_comment"></div>
+
+  <div id="facebook_user_info"></div>
+  <form action="#" onsubmit="$('last_comment').update(this.comment.value)">
+    <label>Add a new Comment</label><br/>
+    <textarea id="comment" rows="20" cols="40"></textarea><br/>
+    <input type="submit" value="Post Comment" />
+  </form>
+
+  
+  <div id="login_button">
+    <p> OR </p>
+    <p><fb:login-button onlogin="onFBLogin()"></fb:login-button></div></p>
+  </div>
+  
+  
+  <script type="text/javascript">
+    function onFBLogin(){
+      $("login_button").hide();
+      $("facebook_user_info").update('<fb:profile-pic uid="loggedinuser" facebook-logo="true"> </fb:profile-pic><fb:name uid="loggedinuser" useyou="false"></fb:name> <a href="#" onclick="FB.Connect.logout(onFBLogout());">Logout</a>');
+      FB.init("29cb726249bb2ebf8e23f2de97cc3a9e", "/xd_receiver.html");     
+    };
+
+    function onFBLogout(){
+      $("facebook_user_info").update();
+      $("login_button").show();
+    };
+  </script>
+  
+  <script type="text/javascript">  FB.init("29cb726249bb2ebf8e23f2de97cc3a9e", "/xd_receiver.html"); </script>
+
+</body>
+
+</html>
