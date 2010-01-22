@@ -203,3 +203,17 @@ Completed in 7ms (View: 2, DB: 0) | 200 OK [http://prateekdayal.net/]
 Processing FacebookController#index (for 127.0.0.1 at 2010-01-22 12:31:40) [GET]
 Rendering facebook/index
 Completed in 7ms (View: 2, DB: 0) | 200 OK [http://prateekdayal.net/]
+
+
+Processing FacebookController#index (for 127.0.0.1 at 2010-01-22 14:19:55) [GET]
+Rendering facebook/index
+Completed in 35ms (View: 30, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-22 14:38:11) [GET]
+  Parameters: {"guid"=>"0.07672159132117706", "session"=>"{\"session_key\":\"3.fFBZ5XnFJ4rUomYRNC2x8Q__.3600.1264158000-505289634\",\"uid\":505289634,\"expires\":1264158000,\"secret\":\"GLAyULMKwlY_3DjLsNEWLQ__\",\"sig\":\"830f596604b1f8caaf5d72ded78bae58\"}", "fb_login"=>nil, "fname"=>"_opener"}
+
+ActionController::RoutingError (No route matches "/xd_receiver.htm" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
