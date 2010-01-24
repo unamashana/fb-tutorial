@@ -217,3 +217,26 @@ ActionController::RoutingError (No route matches "/xd_receiver.htm" with {:metho
   
 
 Rendering rescues/layout (not_found)
+
+
+Processing FacebookController#index (for 127.0.0.1 at 2010-01-22 17:48:07) [GET]
+Rendering facebook/index
+Completed in 9ms (View: 2, DB: 0) | 200 OK [http://prateekdayal.net/]
+
+
+Processing FacebookController#index (for 127.0.0.1 at 2010-01-22 17:50:20) [GET]
+  Parameters: {"session"=>"{\"session_key\":\"3.URnQKtnG4IjoILHK2eDSaQ__.3600.1264168800-505289634\",\"uid\":\"505289634\",\"expires\":1264168800,\"secret\":\"gXR_naicRKFI4Msju2eGAw__\",\"sig\":\"91765f7635845db1e843cda8ba1f7a62\"}", "next"=>"http://prateekdayal.net:3333/xd_receiver.html?fb_login&fname=_opener&guid=0.8245951732708653"}
+Rendering facebook/index
+Completed in 6ms (View: 2, DB: 0) | 200 OK [http://www.prateekdayal.net/?session=%7B%22session_key%22%3A%223.URnQKtnG4IjoILHK2eDSaQ__.3600.1264168800-505289634%22%2C%22uid%22%3A%22505289634%22%2C%22expires%22%3A1264168800%2C%22secret%22%3A%22gXR_naicRKFI4Msju2eGAw__%22%2C%22sig%22%3A%2291765f7635845db1e843cda8ba1f7a62%22%7D&next=http%3A%2F%2Fprateekdayal.net%3A3333%2Fxd_receiver.html%3Ffb_login%26fname%3D_opener%26guid%3D0.8245951732708653]
+
+
+Processing FacebookController#index (for 127.0.0.1 at 2010-01-22 17:50:56) [GET]
+  Parameters: {"session"=>"{\"session_key\":\"3.URnQKtnG4IjoILHK2eDSaQ__.3600.1264168800-505289634\",\"uid\":505289634,\"expires\":1264168800,\"secret\":\"gXR_naicRKFI4Msju2eGAw__\",\"sig\":\"91765f7635845db1e843cda8ba1f7a62\"}", "next"=>"http://prateekdayal.net:3333/xd_receiver.html?fb_login&fname=_opener&guid=0.9106029648619697"}
+Rendering facebook/index
+Completed in 7ms (View: 2, DB: 0) | 200 OK [http://www.prateekdayal.net/?session=%7B%22session_key%22%3A%223.URnQKtnG4IjoILHK2eDSaQ__.3600.1264168800-505289634%22%2C%22uid%22%3A505289634%2C%22expires%22%3A1264168800%2C%22secret%22%3A%22gXR_naicRKFI4Msju2eGAw__%22%2C%22sig%22%3A%2291765f7635845db1e843cda8ba1f7a62%22%7D&next=http%3A%2F%2Fprateekdayal.net%3A3333%2Fxd_receiver.html%3Ffb_login%26fname%3D_opener%26guid%3D0.9106029648619697]
+
+
+Processing FacebookController#index (for 127.0.0.1 at 2010-01-22 17:55:50) [GET]
+  Parameters: {"session"=>"{\"session_key\":\"3.URnQKtnG4IjoILHK2eDSaQ__.3600.1264168800-505289634\",\"uid\":505289634,\"expires\":1264168800,\"secret\":\"gXR_naicRKFI4Msju2eGAw__\",\"sig\":\"91765f7635845db1e843cda8ba1f7a62\"}", "next"=>"http://prateekdayal.net:3333/xd_receiver.html?fb_login&fname=_opener&guid=0.8199780628608683"}
+Rendering facebook/index
+Completed in 6ms (View: 2, DB: 0) | 200 OK [http://www.prateekdayal.net/?session=%7B%22session_key%22%3A%223.URnQKtnG4IjoILHK2eDSaQ__.3600.1264168800-505289634%22%2C%22uid%22%3A505289634%2C%22expires%22%3A1264168800%2C%22secret%22%3A%22gXR_naicRKFI4Msju2eGAw__%22%2C%22sig%22%3A%2291765f7635845db1e843cda8ba1f7a62%22%7D&next=http%3A%2F%2Fprateekdayal.net%3A3333%2Fxd_receiver.html%3Ffb_login%26fname%3D_opener%26guid%3D0.8199780628608683]

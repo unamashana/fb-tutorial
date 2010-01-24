@@ -27,14 +27,14 @@ g/TR/xhtml1/DTD/xhtml1-transitional.dtd">
   
   <div id="login_button">
     <p> OR </p>
-    <p><fb:login-button onlogin="onFBLogin()"></fb:login-button></div></p>
+    <p><fb:login-button></fb:login-button></div></p>
   </div>
   
   
   <script type="text/javascript">
     function onFBLogin(){
       $("login_button").hide();
-      $("facebook_user_info").update('<fb:profile-pic uid="loggedinuser" facebook-logo="true"> </fb:profile-pic><fb:name uid="loggedinuser" useyou="false"></fb:name> <a href="#" onclick="FB.Connect.logout(onFBLogout());">Logout</a>');
+      $("facebook_user_info").update('<fb:profile-pic uid="loggedinuser" facebook-logo="true"> </fb:profile-pic><fb:name uid="loggedinuser" useyou="false"></fb:name> <a href="#" onclick="FB.Connect.logout();">Logout</a>');
       FB.init("29cb726249bb2ebf8e23f2de97cc3a9e", "/xd_receiver.html");     
     };
 
@@ -44,7 +44,7 @@ g/TR/xhtml1/DTD/xhtml1-transitional.dtd">
     };
   </script>
   
-  <script type="text/javascript">  FB.init("29cb726249bb2ebf8e23f2de97cc3a9e", "/xd_receiver.html"); </script>
+  <script type="text/javascript">  FB.init("29cb726249bb2ebf8e23f2de97cc3a9e", "/xd_receiver.html", {"ifUserConnected":onFBLogin, "ifUserNotConnected":onFBLogout}); </script>
 
 </body>
 
